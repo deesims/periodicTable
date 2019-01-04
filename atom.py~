@@ -43,7 +43,7 @@ class Atom:
         pass
 
     def importdata(self): 
-        with open('info.json') as f:
+        with open('info.json.py') as f:
             self.data = json.load(f)
             self.color = self.data[self.numbr-1]['cpkHexColor']
             self.group = self.data[self.numbr-1]['groupBlock']
